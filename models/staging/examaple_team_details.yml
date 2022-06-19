@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: examaple_team_details
+    description: >
+      a list of teams and their details
+    columns:
+      - name: Team
+        description: "Name of the team"
+
+      - name: City
+        description: "Where the team is located"
+        tests:
+          - is_la_team
+
+      - name: State
+        description: "Which state the team is located"
